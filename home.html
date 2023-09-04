@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST 2</title>
+    <style>
+        .head{
+            list-style-type: none;
+            display: inline-flex;
+            text-align: center;
+        }
+        .head a{
+        padding: 20px 10px 20px 10px;
+        text-decoration: none;
+        
+        }
+
+        .head a:hover{
+            color:brown
+        }
+
+        #me {
+            background-color: aqua;
+            text-align: center;
+        }
+
+        form {
+            padding: 10px 5px 10px 5px;
+            border: 3px solid aqua;
+            margin-top: 2px;
+        }
+        #em {
+            padding: 10px 5px 10px 5px;
+            border: 3px solid aqua;
+            margin-top: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="me">
+        <ul class="head">
+            <a href="home.html"><li>HOME</li></a> 
+            <a href="about.html"><li>ABOUT</li></a> 
+            <a href="career.html"><li>CAREER</li></a>
+            <a href="dream.html"><li>DREAMS</li></a> 
+            <a href="hobby.html"><li>HOBBY</li></a> 
+            <a href="contact.html"><li>CONTACTS</li></a> 
+                
+        
+            
+        </ul>
+    </nav>
+    <form id="table">
+        <label for="text">Name:</label>
+        <input type="text" placeholder="name" id="text">
+        <br><label for="email">Email:</label>
+        <input type="email" placeholder="email" id="email">
+        <br> <label for="password">Password</label>
+        <input type="password" placeholder="password" id="password">
+        <br> <input type="submit"><br>
+
+        <br><button id="you">Sign up</button>
+    </form>
+
+    <p id="em"></p>
+    <script>
+        // Number 8
+    document.querySelector("button").addEventListener('click',function (){
+    
+    alert(`Hello World!`);
+})
+// number 6
+function addition(x,y) {
+    console.log(x*y);
+}
+addition(3,4);
+// Number 11
+document.getElementById("me").addEventListener('mouseover', function(){
+    document.getElementById("me").style.backgroundColor = "yellow";
+})
+const fruits = ["Banana", "Orange", "Pear", "Apple", "Mango", "Berry", "Water Mellon", "Quava", "Sour sop", "Grape"];
+let fLens = fruits.length;
+let text = "<ol>";
+    for (let i = 0; i< fLens; i++){
+        text += "<li>" + fruits[i] + "</li>";
+    }
+    text += "</ol>"
+    document.getElementById("em").innerHTML = text;
+    // Number 10
+    const z =  [1, 2, 3, 4, 5]
+    let sum = 0;
+
+    for(i=0; i<z.length; i++){
+        sum += z[i];
+    }
+    console.log(sum);
+    </script>
+</body>
+</html>
